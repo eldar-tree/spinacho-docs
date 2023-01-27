@@ -19,11 +19,8 @@ principle of **default chat collections**. Every chat can pick its default colle
 Default collection can be changed or removed at any time. You can switch between different collections seamlessly.
 
 #### Feature overview
-
-- View any NFT from any subscribed collection with the `show` command. If there is a default collection,
-  calling `/show ${id}` will assume you're looking for a token from the default collection. You can also specify a
-  collection ticker: `/show ${ticker} ${id}` to see an NFT from any of the subscribed collections.
-- Receive realtime notifications about marketplace events
+- Realtime mint notifications
+- Realtime notifications about marketplace events
     - Here is a list of supported marketplaces with a list of supported events from each
         - NFTKey
             - Listing
@@ -36,11 +33,15 @@ Default collection can be changed or removed at any time. You can switch between
             - Buy
         - OpenSea
           - Coming soon
+- View any NFT from any subscribed collection with the `show` command. If there is a default collection,
+   calling `/show ${id}` will assume you're looking for a token from the default collection. You can also specify a
+   collection ticker: `/show ${ticker} ${id}` to see an NFT from any of the subscribed collections.
 - View addresses via their space.id or PancakeSwap usernames
 
 #### Usage screenshots
-![Show command](show.png "Show command")
+![Mint notification](mint.png "Mint notification")
 ![Listing notification](listing.png "Listing notification")
+![Show command](show.png "Show command")
 
 ## Subscription-based model
 
