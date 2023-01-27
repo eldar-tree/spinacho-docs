@@ -1,6 +1,8 @@
 # Spinacho: The Ultimate Telegram NFT Bot
 
-### Unlock the Power of NFTs with Spinacho. The Cutting-Edge Telegram Bot for Binance Smart Chain NFT Data and Notifications
+#### Unlock the Power of NFTs with Spinacho. The Cutting-Edge Telegram Bot for Binance Smart Chain NFT Data and Notifications
+
+#### 🦎 Created by [Lizardev](https://t.me/Lizardev)
 
 <img src="spinacho.png" width="100" height="100" alt="Spinacho"/>
 
