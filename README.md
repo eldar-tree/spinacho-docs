@@ -2,65 +2,83 @@
 
 ### Unlock the Power of NFTs with Spinacho. The Cutting-Edge Telegram Bot for Binance Smart Chain NFT Data and Notifications
 
-___
+<img src="spinacho.png" width="100" height="100" alt="Spinacho"/>
 
-## Motivation
+## 🧠 Motivation
 
-Spinacho was made with one goal in mind - Affordable collection tracking in Telegram. It relies on an affordable
-on-chain subscription system to deliver all relevant collection data to your Telegram chats. It is not limited to one
-chat per collection, rather you can add it to as many chats as you want, private or public.
+Spinacho is a collection tracking tool designed for Telegram. Its primary objective is to provide an affordable,
+on-chain subscription system that delivers relevant collection data to Telegram chats. The tool allows for the addition
+of multiple chats, both private and public, per collection, providing users with flexibility and convenience.
 
-## Functionality
+## 🚀 Features
 
-Spinacho offers all crucial NFT bot functionalities from a single bot, in all your chats. By subscribing, you gain
-access to all of them. There are no tiers, everything is available through a single subscription. Spinacho works on the
-principle of **default chat collections**. Every chat can pick its default collection by sending
-`/select ${ticker}`. Spinacho will look up a collection with the given ticker, and select it as default for that chat.
-Default collection can be changed or removed at any time. You can switch between different collections seamlessly.
+Spinacho offers a range of functionalities through a single subscription. Unlike other solutions, Spinacho does not have
+tiered pricing or limitations, providing users with access to all features. The bot operates on the principle of
+**default chat collections**, allowing each chat to select its preferred collection, which can be changed or removed at
+any time. This allows for seamless switching between different collections, providing users with unparalleled
+flexibility and convenience.
 
-#### Feature overview
-- Realtime mint notifications
-- Realtime notifications about marketplace events
-    - Here is a list of supported marketplaces with a list of supported events from each
-        - NFTKey
-            - Listing
-            - Buy
-            - Bid
-            - Bid accepted
-            - Global bid
-            - Global bid accepted
-        - Rareboard NFTKey
-            - Buy
-        - OpenSea
-          - Coming soon
-- View any NFT from any subscribed collection with the `show` command. If there is a default collection,
-   calling `/show ${id}` will assume you're looking for a token from the default collection. You can also specify a
-   collection ticker: `/show ${ticker} ${id}` to see an NFT from any of the subscribed collections.
-- View addresses via their space.id or PancakeSwap usernames
+When creating a subscription, you choose a unique **$TICKER** for your collection. Ticker is used in chats to select
+your collection as default or to view tokens from it. Each address can be registered only once, and each ticker is
+globally unique. By selecting a collection as default, you unlock access to all features in a chat.
 
-#### Usage screenshots
-![Mint notification](mint.png "Mint notification")
-![Listing notification](listing.png "Listing notification")
-![Show command](show.png "Show command")
+#### 🟩 Real-time mint notifications
 
-## Subscription-based model
+Receive real-time notifications for every mint, including relevant token metadata, a transaction link, and the owner of
+the minted token (identified by space.id or PancakeSwap username when available)
 
-Spinacho works on a simple, on-chain subscription-based model.
+<img src="mint.png" height="400" alt="Mint notification">
 
-Subscription is paid by calling `createSubscription` or `extendSubscription` on
+#### ⬜️ Real-time marketplace notifications
+
+Receive real-time notifications whenever a token from your collection is transacted with on one of the supported
+marketplaces. Spinacho offers support for all leading NFT marketplaces on BSC: [NFTKey](https://nftkey.app)
+, [OpenSea](https://opensea.io) and [Rareboard](https://rareboard.com). Notification will contain all trade-related data
+available in the event and the interacting address (identified by space.id or PancakeSwap username when available).
+
+Here is an overview of supported marketplace events which will notify your chats:
+
+- NFTKey
+    - Listing
+    - Buy
+    - Bid
+    - Bid accepted
+    - Global bid
+    - Global bid accepted
+- Rareboard NFTKey
+    - Buy
+- OpenSea
+    - Coming soon
+
+<img src="listing.png" height="300px" alt="Listing notification">
+<img src="buy.png" height="300px" alt="Buy notification">
+
+#### 👀 View NFTs
+
+View NFTs from any subscribed collection, regardless of their subscription status. This feature provides a convenient
+way to inspect relevant metadata for the selected token, including the name, collection, attribute list, and collection
+description.
+
+<img src="show.png" height="400px" alt="Show command">
+
+## 💸 Subscription-based model
+
+Spinacho works on a simple, on-chain subscription-based model, with the **1st month being FREE**.
+
+Subscription can be created or extended on [spinacho.org](https://spinacho.org), or manually, by
+calling `createSubscription` or `extendSubscription` on
 the [SpinachoSubscription](https://bscscan.com/address/0x210BBC42561d440c20eF1f833F62D17894c29Af0)
-contract on BSC, preferably through [spinacho.org](https://spinacho.org) or manually on BscScan. Single subscription fee will cover _one month_ of premium usage, but you can purchase multiple months in advance.
+contract on BSC. Single subscription fee will cover _one month_ of premium usage, but you can purchase multiple months
+in advance.
 
 Spinacho performs daily on-chain checks for subscription updates. Therefore, after extending your subscription,
-everything is handled automatically. Spinacho will perform daily checks for subscription validity, and in case of expiry, will notify you in all groups where
-your collection is selected as default. You will be notified once every day during the last 7 days of the subscription
-with a reminder message. If the subscription is not renewed, on the day of the expiry, all chats where your collection
-is selected as default will receive the termination message, and the default selection will be removed. You can always
-extend your expired subscription and continue using it regularly.
+everything is handled automatically. Spinacho will perform daily checks for subscription validity, and in case of
+expiry, will notify you in all groups where your collection is selected as default. You will be notified once every day
+during the last 7 days of the subscription with a reminder message. If the subscription is not renewed, on the day of
+the expiry, all chats where your collection is selected as default will receive the termination message, and the default
+selection will be removed. You can always extend your expired subscription and continue using it regularly.
 
-**note** 1st month of subscription is FREE
-
-## Supported commands
+## 💬 Supported commands
 
 - `/show ${ticker} ${id}`
     - Shows the token with `id == ${id}` from the given collection
@@ -75,4 +93,4 @@ extend your expired subscription and continue using it regularly.
 - `/collections`
     - Shows all currently and previously subscribed collections
 - `/help`
-    - Show help
+    - Shows help
