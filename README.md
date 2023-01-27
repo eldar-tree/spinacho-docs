@@ -2,7 +2,10 @@
 
 #### Unlock the Power of NFTs with Spinacho. The Cutting-Edge Telegram Bot for Binance Smart Chain NFT Data and Notifications
 
+#### 🌎 Website: [spinacho.org](https://spinacho.org)
+#### 📝 Smart contract: [0x210BBC42561d440c20eF1f833F62D17894c29Af0](https://bscscan.com/address/0x210BBC42561d440c20eF1f833F62D17894c29Af0)
 #### 🦎 Created by [Lizardev](https://t.me/Lizardev)
+#### 🏔 Cousin NFT project: [Chain Legion](https://chainlegion.com)
 
 <img src="spinacho.png" width="100" height="100" alt="Spinacho"/>
 
