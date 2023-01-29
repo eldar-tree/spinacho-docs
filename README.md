@@ -3,8 +3,11 @@
 #### Unlock the Power of NFTs with Spinacho. The Cutting-Edge Telegram Bot for Binance Smart Chain NFT Data and Notifications
 
 #### 🌎 Website: [spinacho.org](https://spinacho.org)
+
 #### 📝 Smart contract: [0x210BBC42561d440c20eF1f833F62D17894c29Af0](https://bscscan.com/address/0x210BBC42561d440c20eF1f833F62D17894c29Af0)
+
 #### 🦎 Created by [Lizardev](https://t.me/Lizardev)
+
 #### 🏔 Cousin NFT project: [Chain Legion](https://chainlegion.com)
 
 <img src="spinacho.png" width="100" height="100" alt="Spinacho"/>
@@ -12,20 +15,22 @@
 ## 🧠 Motivation
 
 Spinacho is a collection tracking tool designed for Telegram. Its primary objective is to provide an affordable,
-on-chain subscription system that delivers relevant collection data to Telegram chats. The tool allows for the addition
-of multiple chats, both private and public, per collection, providing users with flexibility and convenience.
+on-chain subscription-based system that delivers relevant collection data to Telegram chats. Spinacho can be used in
+multiple telegram groups or private chats simultaneously, with no limitations, providing users with flexibility and
+convenience.
 
 ## 🚀 Features
 
 Spinacho offers a range of functionalities through a single subscription. Unlike other solutions, Spinacho does not have
-tiered pricing or limitations, providing users with access to all features. The bot operates on the principle of
+tiered pricing or limitations, providing users with access to all features within a single premium tier. The bot
+operates on the principle of
 **default chat collections**, allowing each chat to select its preferred collection, which can be changed or removed at
 any time. This allows for seamless switching between different collections, providing users with unparalleled
 flexibility and convenience.
 
 When creating a subscription, you choose a unique **$TICKER** for your collection. Ticker is used in chats to select
 your collection as default or to view tokens from it. Each address can be registered only once, and each ticker is
-globally unique. By selecting a collection as default, you unlock access to all features in a chat.
+globally unique. By selecting a collection as default, you activate the following features for that chat:
 
 #### 🟩 Real-time mint notifications
 
@@ -78,9 +83,9 @@ in advance.
 
 Spinacho performs daily on-chain checks for subscription updates. Therefore, after extending your subscription,
 everything is handled automatically. Spinacho will perform daily checks for subscription validity, and in case of
-expiry, will notify you in all groups where your collection is selected as default. You will be notified once every day
-during the last 7 days of the subscription with a reminder message. If the subscription is not renewed, on the day of
-the expiry, all chats where your collection is selected as default will receive the termination message, and the default
+expiry, will notify you in all groups where your collection is selected as default. You will be notified with a reminder
+message once a day during the last 7 days of the subscription. If the subscription is not renewed, on the day of the
+expiry, all chats where your collection is selected as default will receive the termination message, and the default
 selection will be removed. You can always extend your expired subscription and continue using it regularly.
 
 ## 💬 Supported commands
